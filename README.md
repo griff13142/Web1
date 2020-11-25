@@ -6,3 +6,5 @@ The  Web2 is the templet we would like to try to follow when creating our websit
 
 The goal is to create a website that Is selling our IT skills for set prices per hour. 
 We will link our personal websites to it and our Linkedin or someother  job finder website profile. 
+
+This is my first time using GitHub so if I am not doing something right or not allowing access to something please let me know. 
