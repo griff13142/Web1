@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+
+<!-- Fig. 2.1: main.html -->
+<!-- First HTML5 example. -->
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>David Dinh Introduction</title>
+<style type = "text/css">
+         body  { background-image: url(logo.jpg);
+                 background-position: bottom right;
+                 background-repeat: no-repeat;
+                 background-attachment: fixed;
+                 background-color: LightGrey; }
+         p     { font-size: 16pt;
+                 color: DarkBlue;
+                 text-indent: 1em;
+                 font-family: arial, sans-serif; }
+         .dark { font-weight: bold; }
+         .flexbox 
+         {
+            width: 600px;
+            height: 420px;
+            display: -webkit-box;
+            display: box;
+            -webkit-box-orient: horizontal;
+            box-orient: horizontal;
+         }
+         .flexbox > div 
+         {
+            -webkit-transition: 1s ease-out;
+            transition: 1s ease-out;
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            border: 2px solid black;
+            width: 120px;
+            margin: 10px -10px 10px 0px;
+            padding: 20px 20px 20px 20px;
+            box-shadow: 10px 10px 10px dimgrey;
+         }
+         .flexbox > div:nth-child(1){ background-color: lightgrey; }
+         .flexbox > div:nth-child(2){ background-color: lightgrey; }
+         .flexbox > div:nth-child(3){ background-color: lightgrey; }
+         .flexbox > div:nth-child(4){ background-color: lightgrey; }
+
+         .flexbox > div:hover { 
+            width: 200px; color: white; font-weight: bold; }
+         .flexbox > div:nth-child(1):hover { background-color: royalblue; }
+         .flexbox > div:nth-child(2):hover { background-color: crimson; }
+         .flexbox > div:nth-child(3):hover { background-color: crimson; }
+         .flexbox > div:nth-child(4):hover { background-color: darkgreen; }
+
+
+         #cover 
+         {
+            position: relative;
+            margin: 0 auto;	
+         }
+         #cover img 
+         {
+            position: absolute;
+            left: 0;
+            -webkit-transition: opacity 4s ease-in-out;
+            transition: opacity 4s ease-in-out;
+         }
+         #cover img.top:hover 
+            { opacity:0; }
+      </style>
+</head>
+   <body>
+      <center><p style = "font-size: 50pt; color: white;">
+      Introduction<center></p>
+
+                  <right><img src = "david.jpg" width = "500" height = "500" alt = "me">
+            </p>
+
+      <p style = "font-size: 20pt; color: violet;">
+Hi my name is David Dinh. I am currently 24 years old and a senior in Computer Science at <em>UHD</em>. I have many interests outside of computers like working on my car, playing board games, watching anime, and tinkering with electronics that I should leave alone. If there is something broken I tend to try and fix it rather than throw it away and buy a new one. I am a beginner to HTML but am willing to learn as much as I possibly can! I love cats and partially have 2 cats because one can't stay with me anymore and the other is an outside cat only. I also build computers for fun when someone needs help or I am in need of an upgrade. I am getting into photography / videography and recently bought a DSLR camera as of last year. I currently work at a restaurant in the galleria area called Top Sushi as a server. It is my first server job and when I got the job, I was so grateful because no one wanted to hire someone that didn't have any experience. It is truly about who you know and not what you know sometimes. </p>  
+
+      <p><a href = "http://www.facebook.com">Facebook</a></p>
+      <ol>
+         <li>Cats</li>
+            <li> Cars</li>   
+            <li>Computers</li>
+      </ol>
+
+         <img src = "earl.jpg" width = "360" height = "360"
+            alt = "Earl Grey">
+         <img src = "cat.jpg" width = "400" height = "600"
+            alt = "Jasmine">
+            <p>
+<table border = "1">
+   <caption><strong>Tasks (1st column) and 
+          Their Percentages (2nd column)</strong></caption>
+               <thead>
+            <tr> <!-- <tr> inserts a table row -->
+               <th>Task</th> <!-- insert a heading cell -->
+               <th>Percent</th>
+            </tr>
+         </thead>
+
+         <!-- the <tfoot> section appears last in the table -->
+         <!-- it formats the table footer -->
+         <tfoot>
+            <tr>
+               <th>Total</th>
+               <th>100%</th>
+            </tr>
+         </tfoot>
+
+         <!-- all table content is enclosed -->
+         <!-- within the <tbody> -->
+         <tbody>
+            <tr>
+               <td>Sleeping</td> <!-- insert a data cell -->
+               <td>45%</td>
+            </tr>
+            <tr>
+               <td>Studying</td>
+               <td>10%</td>
+            </tr>
+            <tr>
+               <td>Playing Video Games</td>
+               <td>35%</td>
+            </tr>
+            <tr>
+               <td>Eating</td>
+               <td>10%</td>
+            </tr>
+         </tbody>
+      </table>
+<div class = "flexbox">
+      <div><img src = "box1.jpg" width = "100" height = "100" alt = "Cat2">
+         <p>Jasmine falling asleep.</p></div>
+      <div><img src = "box2.jpg" width = "100" height = "100" alt = "Friends">
+         <p>My friends and brother hanging out in bellaire.</p></div>
+      <div><img src = "box3.jpg" width = "100" height = "100" alt = "Me">
+         <p>Me on top of a retired bunker near Galveston.</p></div>
+      <div><img src = "box4.jpg" width = "100" height = "100" alt = "Cat"><p>Earl is hungry.</p></div>
+      </div>
+
+  <div id= "cover">
+         <img class = "bottom" src = "2.png" alt = "UH">
+         <img class = "top" src = "1.jpg" alt = "1UHD">
+      </div>
+   </body>
+
+</html>
